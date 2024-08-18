@@ -34,3 +34,8 @@ dt_classifier.fit(X, y)
 #plot the tree
 tree.plot_tree(dt_classifier)
 plt.show()
+
+#text representation of tree
+text_representation = tree.export_text(dt_classifier)
+print(text_representation)
+
